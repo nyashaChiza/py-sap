@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Py-SAP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'layouts/assets/style.html' %}
+</head>
+<body>
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+        
+        <div id="sidebar">
+            {% include 'layouts/sidebar.html' %}
+        </div>
+        
+        <div class="body-wrapper">
+            {% include 'layouts/header.html' %}
+    
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+
+        {% include 'layouts/footer.html' %}
+
+        {% include 'layouts/assets/script.html' %}
+    </div>
+</body>
+</html>
