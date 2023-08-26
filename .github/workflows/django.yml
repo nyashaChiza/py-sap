@@ -28,3 +28,15 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+      env:
+        SECRET_KEY: 'test_secret_key'
+        HOST_NAME: 'https://test_host'
+        HOST: 'https://test_host:12345'
+        USE_MYSQL : True
+        MYSQL_DB_NAME : 'py_sap_db'
+        MYSQL_USERNAME : 'sap_user'
+        MYSQL_PASSWORD : 'Chronos@2023'
+        MYSQL_HOST : 'localhost'
+        MYSQL_PORT : 3306
+        SQLITE_DB_NAME : 'db.sqlite3'
+        DEBUG : True
